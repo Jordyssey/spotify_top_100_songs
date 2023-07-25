@@ -14,11 +14,11 @@ soup = BeautifulSoup(music_page, "html.parser")
 songs = soup.select("div li ul li h3")
 song_list = [song.getText().strip() for song in songs]
 
-client_id = "155b18d700984195b971ca1d64d69988"
-secret_id = "0f7821c4e89e46c39bb63e5184388e45"
+client_id = "id"
+secret_id = "secret_id"
 scope = "playlist-modify-private"
 redirect_uri = "http://example.com"
-username = "p180nq704r6x54x54zry9fqus"
+username = "name"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
                                                client_secret=secret_id,
